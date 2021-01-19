@@ -16,9 +16,9 @@ jobs:
           head: master # fork 上游项目需要同步的分支
           base: master # 需要同步到本项目的目标分支
 
-      - uses: fangpidedongsun/notify-telegram@v0.1.0
-        if: always()
-        with:
-          chat: ${{ secrets.chat }} # user id or channel name secret
-          token: ${{ secrets.token }} # token secret
-          status: ${{ job.status }} # do not modify this line
+#       - uses: fangpidedongsun/notify-telegram@v0.1.0
+#         if: always()
+#         with:
+#           chat: ${{ secrets.chat }} # user id or channel name secret
+#           token: ${{ secrets.token }} # token secret
+#           status: ${{ job.status }} # do not modify this line
